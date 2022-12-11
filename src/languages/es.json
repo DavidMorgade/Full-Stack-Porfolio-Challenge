@@ -1,0 +1,28 @@
+{
+  "Intro": {
+    "First": "¡Encantado de",
+    "Second": "conocerte!",
+    "Third": "Soy"
+  },
+  "meetMessage": "Nice to meet you! I'm David Morgade.",
+  "DescriptionText": "Con residencia en España, Soy un front-end developer apasionado en construir apps accesibles que le encantan a los usuarios.",
+  "Contact": "Contáctame",
+  "Projects": "Proyectos",
+  "Project": "Ver Proyecto",
+  "Code": "Ver Código",
+  "Form": "Formulario Typescript",
+  "Password": "Generador de contraseñas",
+  "Space": "Multi-Página Turismo Espacial",
+  "Agency": "Agencia creativa single page",
+  "Tracker": "Rastreador de IPs",
+  "Portfolio": "Porfolio de diseño",
+  "FormHeading": "Contacto",
+  "FormText": "Me encantaría escuchar sobre tu proyecto y de como podría ayudarte. Rellena el formulario y me pondré en contacto contigo con la mayor brevedad posible",
+  "PlaceholderName": "Nombre",
+  "PlaceholderEmail": "Correo Electrónico",
+  "PlaceholderMessage": "Mensaje",
+  "FormSubmit": "Enviar Mensaje",
+  "FormError": "Volver al Formulario",
+  "YearExperience": "Año de Experiencia",
+  "YearsExperience": "Años de Experiencia"
+}

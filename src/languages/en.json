@@ -1,0 +1,28 @@
+{
+  "Intro": {
+    "First": "Nice to",
+    "Second": "meet you!",
+    "Third": "I'm"
+  },
+  "MeetMessage": "Nice to meet you! I'm David Morgade.",
+  "DescriptionText": "Based in Spain, I’m a front-end developer passionate about building accessible web apps that users love.",
+  "Contact": "Contact me",
+  "Projects": "Projects",
+  "Project": "View Project",
+  "Code": "View Code",
+  "Form": "Typescript Form",
+  "Password": "Password Generator",
+  "Space": "Space tourism multi-page website",
+  "Agency": "Creative agency single-page site",
+  "Tracker": "Ip address tracker",
+  "Portfolio": "Design Porfolio",
+  "FormHeading": "Contact",
+  "FormText": "I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.",
+  "PlaceholderName": "Name",
+  "PlaceholderEmail": "Email",
+  "PlaceholderMessage": "Message",
+  "FormSubmit": "Send message",
+  "FormError": "Go back to form",
+  "YearExperience": "Year Experience",
+  "YearsExperience": "Years Experience"
+}

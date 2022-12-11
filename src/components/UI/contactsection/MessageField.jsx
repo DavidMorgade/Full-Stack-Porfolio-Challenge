@@ -20,12 +20,12 @@ export default function ContactField({
     <InputContainer>
       <StyledLabel htmlFor={field}>{field}</StyledLabel>
       <StyledInputText
+        aria-labelledby={field}
         maxLength="500"
         onChange={onChange}
         onBlur={handleFocusOut}
         onFocus={handleFocusIn}
         id={field}
-        type="text"
         cols="20"
         rows="5"
         ref={forwardedRef}

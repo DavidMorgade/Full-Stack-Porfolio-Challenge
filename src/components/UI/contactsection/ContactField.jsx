@@ -20,6 +20,7 @@ export default function ContactField({
     <InputContainer>
       <StyledLabel htmlFor={field}>{field}</StyledLabel>
       <StyledInputText
+        aria-labelledby={field}
         maxLength="40"
         hasError={hasError}
         onChange={onChange}

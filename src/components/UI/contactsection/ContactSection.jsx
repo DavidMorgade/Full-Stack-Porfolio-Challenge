@@ -30,6 +30,7 @@ const ContactSectionStyled = styled.aside`
   position: relative;
   &::after {
     content: '';
+    pointer-events: none;
     position: absolute;
     background-image: url(${Rings});
     height: 14rem;

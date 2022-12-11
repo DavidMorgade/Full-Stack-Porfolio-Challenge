@@ -5,9 +5,7 @@ import SocialMedia from '~/components/Links/SocialMedia';
 import {
   Rings,
   Circle,
-  MobileProfile,
   ProfileMobile,
-  Profile,
   Spanish,
   English,
   Sun,
@@ -33,12 +31,15 @@ export default function MainHeader({ toggleTheme, theme }) {
       {size.width < 768 && (
         <LangBtn onClick={languageHandler}>
           <LangSpanishText>{language.toUpperCase()}</LangSpanishText>
-          <LangSpanish src={language === 'en' ? English : Spanish} />
+          <LangSpanish
+            alt="flag icon"
+            src={language === 'en' ? English : Spanish}
+          />
         </LangBtn>
       )}
       {size.width >= 768 && (
         <LightAndDark onClick={toggleTheme}>
-          <LightAndDarkImage src={modeImg} />
+          <LightAndDarkImage alt="light and dark switch" src={modeImg} />
           <LightAndDarkText>{`${
             theme === 'light' ? 'DARK' : 'LIGHT'
           }`}</LightAndDarkText>
@@ -50,7 +51,7 @@ export default function MainHeader({ toggleTheme, theme }) {
 
       {size.width < 768 && (
         <LightAndDark onClick={toggleTheme}>
-          <LightAndDarkImage src={modeImg} />
+          <LightAndDarkImage alt="light and dark switch" src={modeImg} />
           <LightAndDarkText>{`${
             theme === 'light' ? 'DARK' : 'LIGHT'
           }`}</LightAndDarkText>
@@ -59,7 +60,10 @@ export default function MainHeader({ toggleTheme, theme }) {
       {size.width >= 768 && (
         <LangBtn onClick={languageHandler}>
           <LangSpanishText>{language.toUpperCase()}</LangSpanishText>
-          <LangSpanish src={language === 'en' ? English : Spanish} />
+          <LangSpanish
+            alt="flag icon"
+            src={language === 'en' ? English : Spanish}
+          />
         </LangBtn>
       )}
     </Header>

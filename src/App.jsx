@@ -1,16 +1,20 @@
+// Theming
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './components/GlobalStyles/GlobalStyle';
 import { darkTheme, lightTheme } from './components/GlobalStyles/Theme';
+// Hooks
+import { useState } from 'react';
+// UI
 import ContactSection from './components/UI/contactsection/ContactSection';
 import Footer from './components/UI/footer/Footer';
 import Main from './components/UI/main/Main';
-import Projects from './components/UI/projectssection/Projects';
-import Skills from './components/UI/skillssection/Skills';
+// Custom hook
 import { useDarkMode } from './hooks/useDarkMode';
+// Components
 import LoadingSpinner from './components/Spinners/LoadingSpinner';
-import { useState } from 'react';
 import Failed from './components/FormResults/Failed';
 import Success from './components/FormResults/Success';
+// Lang Context
 import { LanguageWrapper } from './context/useLangContext';
 
 function App() {
@@ -30,8 +34,6 @@ function App() {
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Main theme={theme} toggleTheme={themeToggler} />
-        <Skills />
-        <Projects />
         {/* Conditional renders form section depending on the form State */}
         {formLoading ? (
           <LoadingSpinner />

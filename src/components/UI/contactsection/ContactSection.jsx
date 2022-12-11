@@ -24,7 +24,7 @@ export default function ContactSection({
   );
 }
 
-const ContactSectionStyled = styled.section`
+const ContactSectionStyled = styled.aside`
   margin-top: 9.2rem;
   background-color: ${({ theme }) => theme.form};
   position: relative;

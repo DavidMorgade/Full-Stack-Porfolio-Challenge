@@ -17,9 +17,9 @@ export const useDarkMode = () => {
       window.matchMedia &&
       window.matchMedia('(prefers-color-scheme: dark)').matches
     ) {
-      setTheme('dark');
+      setTheme('dark'); // Always start dark, remove when light theme gets improved
     } else {
-      setTheme('light');
+      setTheme('dark');
     }
     localTheme && setTheme(localTheme);
   }, []);

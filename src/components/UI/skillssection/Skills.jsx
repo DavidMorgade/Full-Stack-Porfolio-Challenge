@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 // Images
 import {
-  CssIcon,
-  GithubIcon,
-  Rings,
-  SassIcon,
-  GitIcon,
-  ReactIcon,
-  NextIcon,
-  NodeIcon,
-  ExpressIcon,
-  TypescriptIcon,
-  Javascript,
+    CssIcon,
+    GithubIcon,
+    Rings,
+    SassIcon,
+    GitIcon,
+    ReactIcon,
+    NextIcon,
+    NodeIcon,
+    ExpressIcon,
+    TypescriptIcon,
+    Javascript,
 } from '~/images/images';
 // Components
 import SkillCard from './SkillCard';
@@ -21,53 +21,59 @@ import es from '~/languages/es.json';
 import { useLanguageContext } from '~/context/useLangContext';
 
 export default function Skills() {
-  // Languages
-  const [language] = useLanguageContext();
-  const langText = language === 'en' ? en : es;
-  return (
-    <SkillsContainer>
-      <SkillCard
-        type="one"
-        icon={Javascript}
-        skill="Javascript"
-        exp={`2 ${langText.YearsExperience}`}
-      />
-      <SkillCard
-        type="two"
-        icon={CssIcon}
-        iconTwo={SassIcon}
-        skill="CSS / SCSS"
-        exp={`2 ${langText.YearsExperience}`}
-      />
-      <SkillCard
-        type="two"
-        icon={GitIcon}
-        iconTwo={GithubIcon}
-        skill="Git / GitHub"
-        exp={`2 ${langText.YearsExperience}`}
-      />
-      <SkillCard
-        type="two"
-        icon={ReactIcon}
-        iconTwo={NextIcon}
-        skill="React / Next"
-        exp={`1 ${langText.YearExperience}`}
-      />
-      <SkillCard
-        type="two"
-        icon={NodeIcon}
-        iconTwo={ExpressIcon}
-        skill="Node / Express"
-        exp={`1 ${langText.YearExperience}`}
-      />
-      <SkillCard
-        type="one"
-        icon={TypescriptIcon}
-        skill="Typescript"
-        exp={`1 ${langText.YearExperience}`}
-      />
-    </SkillsContainer>
-  );
+    // Languages
+    const [language] = useLanguageContext();
+    const langText = language === 'en' ? en : es;
+    return (
+        <SkillsContainer>
+            <SkillCard
+                type="one"
+                icon={Javascript}
+                skill="Javascript"
+            />
+            <SkillCard
+                type="two"
+                icon={CssIcon}
+                iconTwo={SassIcon}
+                skill="CSS / SCSS"
+            />
+            <SkillCard
+                type="two"
+                icon={GitIcon}
+                iconTwo={GithubIcon}
+                skill="Git / GitHub"
+            />
+            <SkillCard
+                type="two"
+                icon={ReactIcon}
+                iconTwo={NextIcon}
+                skill="React / Next"
+            />
+            <SkillCard
+                type="two"
+                icon={NodeIcon}
+                iconTwo={ExpressIcon}
+                skill="Node / Express"
+            />
+            <SkillCard
+                type="one"
+                icon={TypescriptIcon}
+                skill="Typescript"
+            />
+            <SkillCard
+                type="one"
+                skill="Golang"
+            />
+            <SkillCard
+                type="two"
+                skill="Java"
+            />
+            <SkillCard
+                type="two"
+                skill="CSharp / .NET"
+            />
+        </SkillsContainer>
+    );
 }
 
 const SkillsContainer = styled.section`

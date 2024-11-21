@@ -1,17 +1,20 @@
 import styled from 'styled-components';
 // Images
 import {
-    CssIcon,
-    GithubIcon,
-    Rings,
-    SassIcon,
-    GitIcon,
-    ReactIcon,
-    NextIcon,
-    NodeIcon,
-    ExpressIcon,
-    TypescriptIcon,
-    Javascript,
+  CssIcon,
+  GithubIcon,
+  Rings,
+  SassIcon,
+  GitIcon,
+  ReactIcon,
+  NextIcon,
+  NodeIcon,
+  ExpressIcon,
+  TypescriptIcon,
+  Javascript,
+  Golang,
+  CSharp,
+  Java,
 } from '~/images/images';
 // Components
 import SkillCard from './SkillCard';
@@ -21,59 +24,64 @@ import es from '~/languages/es.json';
 import { useLanguageContext } from '~/context/useLangContext';
 
 export default function Skills() {
-    // Languages
-    const [language] = useLanguageContext();
-    const langText = language === 'en' ? en : es;
-    return (
-        <SkillsContainer>
-            <SkillCard
-                type="one"
-                icon={Javascript}
-                skill="Javascript"
-            />
-            <SkillCard
-                type="two"
-                icon={CssIcon}
-                iconTwo={SassIcon}
-                skill="CSS / SCSS"
-            />
-            <SkillCard
-                type="two"
-                icon={GitIcon}
-                iconTwo={GithubIcon}
-                skill="Git / GitHub"
-            />
-            <SkillCard
-                type="two"
-                icon={ReactIcon}
-                iconTwo={NextIcon}
-                skill="React / Next"
-            />
-            <SkillCard
-                type="two"
-                icon={NodeIcon}
-                iconTwo={ExpressIcon}
-                skill="Node / Express"
-            />
-            <SkillCard
-                type="one"
-                icon={TypescriptIcon}
-                skill="Typescript"
-            />
-            <SkillCard
-                type="one"
-                skill="Golang"
-            />
-            <SkillCard
-                type="two"
-                skill="Java"
-            />
-            <SkillCard
-                type="two"
-                skill="CSharp / .NET"
-            />
-        </SkillsContainer>
-    );
+  // Languages
+  const [language] = useLanguageContext();
+  const langText = language === 'en' ? en : es;
+  return (
+    <SkillsContainer>
+      <SkillCard
+        type="one"
+        icon={Javascript}
+        skill="Javascript"
+      />
+      <SkillCard
+        type="two"
+        icon={CssIcon}
+        iconTwo={SassIcon}
+        skill="CSS / SCSS"
+      />
+      <SkillCard
+        type="two"
+        icon={GitIcon}
+        iconTwo={GithubIcon}
+        skill="Git / GitHub"
+      />
+      <SkillCard
+        type="two"
+        icon={ReactIcon}
+        iconTwo={NextIcon}
+        skill="React / Next"
+      />
+      <SkillCard
+        type="two"
+        icon={NodeIcon}
+        iconTwo={ExpressIcon}
+        skill="Node / Express"
+      />
+      <SkillCard
+        type="one"
+        icon={TypescriptIcon}
+        skill="Typescript"
+      />
+      <SkillCard
+        type="one"
+        icon={Golang}
+        skill="Golang"
+      />
+      <SkillCard
+        type="two"
+        icon={Java}
+        iconTwo={Java}
+        skill="Java"
+      />
+      <SkillCard
+        type="two"
+        icon={CSharp}
+        iconTwo={CSharp}
+        skill="CSharp / .NET"
+      />
+    </SkillsContainer>
+  );
 }
 
 const SkillsContainer = styled.section`

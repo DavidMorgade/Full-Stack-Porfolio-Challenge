@@ -10,6 +10,7 @@ import {
   GithubIcon,
   LinkedinLight,
   FrontendLight,
+  CodigoMorga
 } from '../../images/images';
 // React Scroll package
 import { animateScroll as scroll } from 'react-scroll';
@@ -49,6 +50,12 @@ export default function SocialMedia({ theme }) {
           <SocialIcon
             alt="Twitter Icon"
             src={theme === 'light' ? TwitterLight : Twitter}
+          />
+        </SocialLink>
+        <SocialLink href="https://codigomorga.es/blog" target="_blank">
+          <SocialIcon
+            alt="Blog Icon"
+            src={CodigoMorga}
           />
         </SocialLink>
       </IconContainer>

@@ -7,6 +7,7 @@ import Linkedin from './icon-linkedin.svg';
 import LinkedinLight from './linkedin-light.png';
 import Twitter from './icon-twitter.svg';
 import TwitterLight from './twitter-light.png';
+import CodigoMorga from './codigomorga.svg';
 // Profile
 import MobileProfile from './image-profile-mobile.webp';
 import Profile from './profilepic.jpg';
@@ -21,6 +22,8 @@ import Project3 from './thumbnail-project-3-small.webp';
 import Project4 from './thumbnail-project-4-small.webp';
 import Project5 from './thumbnail-project-5-small.webp';
 import Project6 from './thumbnail-project-6-small.webp';
+import Project7 from './url_shortener.png';
+import Project8 from './whatsapp_bot.webp';
 // languages
 import Spanish from './Spanish.png';
 import English from './English.png';
@@ -38,6 +41,9 @@ import NodeIcon from './NodeIcon.svg';
 import ExpressIcon from './ExpressIcon.png';
 import TypescriptIcon from './TypescriptIcon.svg';
 import GithubIcon from './GithubIcon.png';
+import Golang from './go-lang.png';
+import CSharp from './c-sharp.png';
+import Java from './java.png';
 
 export {
   Frontend,
@@ -45,6 +51,7 @@ export {
   Linkedin,
   Twitter,
   MobileProfile,
+  CodigoMorga,
   Rings,
   Circle,
   Project1,
@@ -53,6 +60,8 @@ export {
   Project4,
   Project5,
   Project6,
+  Project7,
+  Project8,
   Spanish,
   English,
   Sun,
@@ -71,6 +80,9 @@ export {
   ExpressIcon,
   TypescriptIcon,
   GithubIcon,
+  Golang,
+  CSharp,
+  Java,
   Profile,
   ProfileMobile,
 };

@@ -78,6 +78,7 @@ const ProjectImg = styled.div`
   img {
     transition: opacity 0.5s ease;
     width: 100%;
+    aspect-ratio: 4 / 3;
   }
 `;
 const ProjectTitle = styled.h3`

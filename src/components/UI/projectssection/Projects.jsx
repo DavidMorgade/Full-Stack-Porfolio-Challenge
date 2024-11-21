@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import Contact from '~/components/Links/Contact';
 import Card from './Card';
 import {
-  Project1,
-  Project2,
-  Project3,
-  Project4,
-  Project5,
-  Project6,
+    Project1,
+    Project2,
+    Project3,
+    Project4,
+    Project7,
+    Project6,
 } from '~/images/images';
 // Language
 import en from '../../../languages/en.json';
@@ -16,66 +16,66 @@ import es from '../../../languages/es.json';
 import { useLanguageContext } from '../../../context/useLangContext';
 
 export default function Projects() {
-  const [language] = useLanguageContext();
-  const langText = language === 'en' ? en : es;
-  return (
-    <ProjectSection>
-      <TopContainer>
-        <ProjectsHeading>{langText.Projects}</ProjectsHeading>
-        <Contact />
-      </TopContainer>
-      <ProjectsContainer>
-        <Card
-          img={Project1}
-          alt={langText.Form}
-          title={langText.Form}
-          technologies="Typescript CSS"
-          project="https://typescript-dummyform.netlify.app/"
-          github="https://github.com/DavidMorgade/All-FEM-Projects/tree/finished-projects/17-TYPESCRIPT-VITE%20form%20validation"
-        />
-        <Card
-          img={Project2}
-          alt={langText.Password}
-          title={langText.Password}
-          technologies="React Styled-Components"
-          project="https://password-generator-lovat-gamma.vercel.app/"
-          github="https://github.com/DavidMorgade/All-FEM-Projects/tree/finished-projects/15-REACT-Password-generator-main"
-        />
-        <Card
-          img={Project3}
-          title={langText.Space}
-          technologies="NextJS"
-          alt={langText.Space}
-          project="https://space-tourism-page-rho.vercel.app/"
-          github="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/07-NEXTJS-Space-tourism-page-Frontendmentor-main"
-        />
-        <Card
-          img={Project4}
-          title={langText.Agency}
-          technologies="React Styled-Components"
-          alt={langText.Agency}
-          project="https://creative-agency-single-page.vercel.app/"
-          github="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/13-REACT-Creative-Agency-single-page-main"
-        />
-        <Card
-          img={Project5}
-          title={langText.Tracker}
-          technologies="React Styled Components"
-          alt={langText.Tracker}
-          project="https://ip-address-tracked-david-morgade.netlify.app/"
-          github="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/10-REACT-IP-Address-tracker-main"
-        />
-        <Card
-          img={Project6}
-          title={langText.Portfolio}
-          alt={langText.Portfolio}
-          technologies="React"
-          project="https://single-page-design-portfolio-challenge.vercel.app/"
-          github="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/12-REACT-Single-page-design-Portfolio-main"
-        />
-      </ProjectsContainer>
-    </ProjectSection>
-  );
+    const [language] = useLanguageContext();
+    const langText = language === 'en' ? en : es;
+    return (
+        <ProjectSection>
+            <TopContainer>
+                <ProjectsHeading>{langText.Projects}</ProjectsHeading>
+                <Contact />
+            </TopContainer>
+            <ProjectsContainer>
+                <Card
+                    img={Project1}
+                    alt={langText.Form}
+                    title={langText.Form}
+                    technologies="Typescript CSS"
+                    project="https://typescript-dummyform.netlify.app/"
+                    github="https://github.com/DavidMorgade/All-FEM-Projects/tree/finished-projects/17-TYPESCRIPT-VITE%20form%20validation"
+                />
+                <Card
+                    img={Project2}
+                    alt={langText.Password}
+                    title={langText.Password}
+                    technologies="React Styled-Components"
+                    project="https://password-generator-lovat-gamma.vercel.app/"
+                    github="https://github.com/DavidMorgade/All-FEM-Projects/tree/finished-projects/15-REACT-Password-generator-main"
+                />
+                <Card
+                    img={Project3}
+                    title={langText.Space}
+                    technologies="NextJS"
+                    alt={langText.Space}
+                    project="https://space-tourism-page-rho.vercel.app/"
+                    github="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/07-NEXTJS-Space-tourism-page-Frontendmentor-main"
+                />
+                <Card
+                    img={Project4}
+                    title={langText.Agency}
+                    technologies="React Styled-Components"
+                    alt={langText.Agency}
+                    project="https://creative-agency-single-page.vercel.app/"
+                    github="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/13-REACT-Creative-Agency-single-page-main"
+                />
+                <Card
+                    img={Project7}
+                    title={langText.URL}
+                    technologies="Golang"
+                    alt={langText.URL}
+                    project="https://davidmorgade.link/"
+                    github="https://github.com/DavidMorgade/urlshortener"
+                />
+                <Card
+                    img={Project6}
+                    title={langText.Portfolio}
+                    alt={langText.Portfolio}
+                    technologies="React"
+                    project="https://single-page-design-portfolio-challenge.vercel.app/"
+                    github="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/12-REACT-Single-page-design-Portfolio-main"
+                />
+            </ProjectsContainer>
+        </ProjectSection>
+    );
 }
 
 const ProjectSection = styled.section`
